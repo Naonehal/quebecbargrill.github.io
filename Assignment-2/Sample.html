@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<!--HTML starts here-->
+
+<html lang="en">
+
+<!--Head Section Starts here-->
+
+    <head>
+        <title>Quebec Bar & Grill</title> 
+        <link rel="icon" type="image/ico" href="Favicon.ico">
+        <meta charset="utf-8">
+        <meta name="description" content="Web Programming">
+        <meta name="keywords" content="CIS 145,HTML,CSS,UFV,Professor Lili Saghafi">
+        <meta name="author" content="CodingGurus">
+        
+        <style>
+          *{
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+                
+            }
+
+            body{
+                background: url(Background_image.jpg)no-repeat;
+                background-size:cover;
+                background-attachment: fixed;
+                font-family: Verdana,Arial, sans-serif;
+                overflow-x: hidden;
+            }
+            .wrapper{
+              width: 1200px;
+              margin: 100px auto;
+            }
+
+            .title h4{
+              text-transform: capitalize;
+              font-size: 36px;
+              position: relative;
+              display: inline-block;
+            }
+            .title h4 span{
+              display: block;
+              font: 2rem italic;
+              text-align: center;
+             
+             
+              color: White;
+            }
+            
+            .offer{
+              display: flex;
+              flex-wrap: wrap;
+              
+            }
+            .offers {
+              flex-basis: 580px;
+              margin-bottom: 20px;
+              padding-bottom: 20px;
+              border-bottom: 6px solid black;
+            }
+            
+
+            .offers{
+                    display:flex;
+                    flex-direction:row;
+                    align-items:center;
+                   }
+
+            .offers:hover img{
+                              border-radius:0;
+                             }
+
+            .offers img{
+                        max-width:180px;
+                        margin-right:30px;
+                        border-radius:50%;
+                        border:8px solid black;
+                        padding:3px;
+                        
+                       }
+
+            .offers h4{
+                       text-transform:capitalize;
+                       font-size:22px;
+                       border-bottom:6px dashed black;
+                       margin-bottom:5px;
+                       padding-bottom:5px;
+                       color: white;
+                      }
+
+            .offers h4 span{
+                            float:right;
+                            color: white;
+                            font-style:italic;
+                           }
+            
+                           
+
+           
+            .nav{
+                 background-color:  #7c0a02;
+                 display: flex;
+                 justify-content: center;
+                 width: 110%;
+                }
+            
+            .nav a{
+                   color: #FBF1DC;
+                   text-align: center;
+                   font-weight: bold;
+                   text-decoration: none;
+                   text-transform: uppercase;
+                   padding: 14px 28px;
+                  }
+
+            .nav a:hover{
+                         background-color: rgb(115, 145, 85);
+                         color: black;
+                        }
+            @media screen and (max-width: 700px)
+              {
+                .nav{
+                     flex-direction: column;
+                    } 
+            }
+
+
+            .content{
+                     border: 1px solid black;
+                     width: 550px;
+                     height: 350px;
+                     margin-left: 10rem;
+                     margin-top: 5rem;
+                     padding: 20px;
+                     background: #000;
+                     opacity: 1;
+                     border-radius: 15px;
+                     box-shadow: 0px 40px 40px;
+                    }
+
+            h1 { 
+                background-color:#FBF1DC;
+                color: #7c0a02; 
+                font-size: 400%; 
+                padding: 0.625em 0.625em 0.625em 1.875em;
+                text-align: center;
+               }
+
+            span {
+                  float: left;
+                  padding: 5px;
+                 }
+
+            h2 {  
+                color: khaki;
+                font-size: 200%; 
+                padding: 0.25em 0.25em 0.25em 1.875em;
+                text-align: center;
+               }
+
+            .float {
+                    float: left;
+                    margin-right: 10px;
+                    border: 3px ridge red;
+                   }
+            
+            button{
+                   padding: 10px;
+                   background-color: #ff4c4c;
+                   color: lavender;
+                   font-size: 20px;
+                   font-weight: 100;
+                   border: none;
+                   font-family: Arial, Helvetica, sans-serif;
+                   border-radius: 3px;
+                   }
+
+            button:hover{
+                         background-color: #ed55ed;
+                         cursor: pointer;
+                        }
+
+            p {
+               font-size: 1.5em;
+               font-weight: 100;
+               opacity: 0.8;
+               color: white;
+               }
+
+            footer{
+                   padding: 0;
+                   margin: 0;
+                   box-sizing: border-box;
+                   font-family: Arial, Helvetica, sans-serif;
+                   }
+
+            .footer-con{
+                        background-color: #212329;
+                        padding: 2rem 0 4rem 0;
+                       }
+
+            .footer{
+                    width: 100%;
+                    height: 40vh;
+                    background-color: #212329;
+                    color: #fff;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                   }
+
+            .footer-top-1, .footer-top-2, .footer-top-3{
+              display: flex;
+              flex-direction: column;
+              margin-right: 8rem;
+            }
+
+            .footer-top-1 h3, .footer-top-2 h3, .footer-top-3 h3 {
+              margin-bottom: 2rem;
+            }
+
+            .footer-top-1 a, .footer-top-2 a, .footer-top-3 a{
+              color: #fff;
+              text-decoration: none;
+              margin-bottom: 0.5rem;
+              line-height: 1.5rem;
+            }
+
+            .footer-top-1 a:hover, .footer-top-2 a:hover, .footer-top-3 a:hover{
+              color: red;
+            }
+
+            .footer-content{
+                            font:1rem arial, helvetica, sans-serif;
+                            padding: 0;
+	                          background: #212329;
+	                          color: #212329;
+                           }
+
+            
+  
+        </style>
+
+    </head>
+    <body>
+      <div class="box">
+        <span><img src="Restaurant Logo.jpg" alt="Quebec Bar & Grill Logo" height="150" and width="120"></span>
+        <h1>&nbsp; &nbsp; &nbsp; &nbsp;  Quebec Bar & Grill</h1>
+          <div class="nav">
+            
+              <a href="Home.html">Home</a>
+              <a href="menu.html">Menu</a>
+              <a href="OnlineOrder.html">Online Order</a>
+              <a href="Reservation.html">Reservation</a>
+              <a href="Offers.html">Offers</a>
+              <a href="language.html">Language</a>
+              <a href="Aboutus.html">About Us</a>
+            
+
+          </div>
+          
+          <div class="content">
+            
+            <span><img class="float" src="chef_character.jpg" alt="Photo_of_chief" height="300" width="200"></span>
+            <h2>Explore Our Menu</h2>
+            <br>
+            <p>Sizzling Food waiting for you offered by one of the best restaurant of Quebec.</p>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button>View Menu</button>
+          </div>
+        
+      </div>
+      <div class="wrapper">
+        <div class="title">
+          <h4><span>Exciting Offers</span></h4>
+        </div>
+        <div class="offer">
+          <div class="offers">
+            <a href="offers.html"><img src="Offer_1.jpg" alt="Chicken Kebab with tomato sauce" height="200" width="200"></a>
+            <div class="Offer-content">
+              <h4>Grilled Chicken Kebab with Tomato Sauce<span>$20</span></h4>
+            </div>
+          </div>
+          <div class="offers">
+            <a href="Offershtml"><img src="Offer_2.jpg" alt="Shrimps with Beer" height="200" width="200"></a>
+            <div class="Offer-content">
+              <h4>Shrimps dipped in Barbecue Sauce with Beer<span>$30</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <h4><span>Kids Menu</span></h4>
+        </div>
+        <div class="offer">
+          <div class="offers">
+            <a href="kidsmenu.html"><img src="kids_2.jpg" alt="Menu for kids" height="200" width="200"></a>
+            <div class="Offer-content">
+              <h4>Special Menu for kids<span></span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="Footer-con">
+          <div class="footer">
+            <div class="footer-top-1">
+              <br>
+              <h3>About Us</h3>
+              <a href="#">Blog</a>
+              <a href="#">Customers</a>
+              <a href="#">Terms of Services</a>
+            </div>
+            <div class="footer-top-2">
+              <br>
+              <h3>Services</h3>
+              <a href="#">Online Orders</a>
+              <a href="#">Reservation</a>
+              <a href="#">Offers</a>
+            </div>
+            <div class="footer-top-3">
+              <br>
+              <h3>Social Media</h3>
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">Youtube</a>
+            </div>
+            
+            <img src="Accessibility_logo.png" alt="Section 508 logo" height="200" width="150">
+            <p class="footer-content"><mark><i>Disclaimer: “ This is a project of CIS 145 , Web Publishing Course in UFV, Instructed and requested by Professor Lili Saghafi"</i></mark></p>
+          </div>
+        </div>
+      </footer>
+    </body>
+
+</html>
